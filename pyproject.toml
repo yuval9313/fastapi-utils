@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "FastApi-RESTful"
-version = "0"
+version = "0.3.2"
 description = "Quicker FastApi developing tools"
 license = "MIT"
 authors = ["Yuval Levi"]
@@ -119,7 +119,7 @@ exclude_lines = [
 ]
 
 [tool.poetry-version-plugin]
-source = "git-tag"
+source = "init"
 
 [build-system]
 requires = ["poetry_core>=1.0.0"]
