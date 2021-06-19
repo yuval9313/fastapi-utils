@@ -76,6 +76,7 @@ mkdocs-material = "*"
 markdown-include = "*"
 
 [tool.poetry.extras]
+all = ["sqlalchemy"]
 session = ["sqlalchemy"]
 
 [tool.black]
