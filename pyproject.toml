@@ -54,7 +54,6 @@ requests = "*"  # TestClient
 pytest = "~=5.4.3"
 pytest-cov = "*"
 pytest-asyncio = "*"
-coverage = "*"
 
 # Python 3.6 Testing
 async-exit-stack = { version = "*", python = "~3.6" }
@@ -102,6 +101,21 @@ multi_line_output = 3
 include_trailing_comma = true
 force_grid_wrap = 0
 combine_as_imports = true
+
+[tool.coverage.run]
+source = ["fastapi_restful"]
+branch = true
+
+[tool.coverage.report]
+precision = 2
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "raise NotImplemented",
+    "@overload",
+    "if TYPE_CHECKING:",
+    'if __name__ == "__main__":'
+]
 
 [tool.poetry-version-plugin]
 source = "git-tag"
