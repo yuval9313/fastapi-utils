@@ -8,10 +8,10 @@ For more detailed performance investigations (during development only, due to ad
 consider using the coroutine-aware profiling library `yappi`.
 """
 import os
-import psutil
 import time
 from typing import Any, Callable, Optional
 
+import psutil
 from fastapi import FastAPI
 from starlette.middleware.base import RequestResponseEndpoint
 from starlette.requests import Request
